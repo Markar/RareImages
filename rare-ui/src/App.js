@@ -8,9 +8,7 @@ function App() {
   let [index, setIndex] = useState(0);
 
   useEffect(() => {
-    fetch('/images').then(res => res.json()).then(data => {
-      //setCurrentTime(data.time);
-      console.log('data', data.images);
+    fetch('/images').then(res => res.json()).then(data => {      
       setImages(data.images);
     });
   }, []);
