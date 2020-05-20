@@ -5,7 +5,7 @@ I used create-react-app to bootstrap rare-ui
 # To run the application
 git clone https://github.com/Markar/RareImages.git
 
-cd ../rare-api
+cd rare-api
 Create new virtual environment:
  python -m venv venv
 Run activate:
@@ -19,6 +19,19 @@ npm run start
 
 open another terminal at RareImages/rare-ui
 npm run start-api
+
+# ON MAC 
+cd rare-api
+python3 install virtualenv
+python3 -m venv venv
+source ./venv/bin/activate
+pip3 install flask flask-cors python-dotenv
+flask run (has to be run from the terminal running venv, and run from rare-api root)
+
+open new terminal at rare-ui
+npm run start
+
+
 
 * With virtualenv, I don't think you have to install the dependencies manually for the api.
 * There is a readme in the rare-api folder with instructions for setting up the virtualenv

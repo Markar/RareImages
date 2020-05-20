@@ -5,6 +5,10 @@ import os, json
 
 app = Flask(__name__, static_url_path='/static')
 
+@app.route('/')
+def index():
+	return 'Hello, Flask!'
+
 @app.route('/images', methods=['GET'])
 def get_images():  
   # json_path = 'static/images'
