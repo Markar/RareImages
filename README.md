@@ -10,7 +10,6 @@ npm run start-api
 
 open another terminal at rare-ui path
 npm run start
-* With virtualenv, I don't think you have to install the dependencies manually for the api.
 * There is a readme in the rare-api folder with instructions for setting up the virtualenv
 
 # Where I would spend more time
