@@ -3,14 +3,31 @@ Github located at https://github.com/Markar/RareImages
 I used create-react-app to bootstrap rare-ui
 
 # To run the application
-git clone https://github.com/Markar/RareImages.git
-cd RareImages/rare-ui
-npm install
-npm run start-api 
+- git clone https://github.com/Markar/RareImages.git
+- Install virtualenv on the system using pip or pip3 install virtualenv
 
-open another terminal at rare-ui path
-npm run start
-* There is a readme in the rare-api folder with instructions for setting up the virtualenv
+- cd rare-api
+- python -m venv venv
+- venv/Scripts/activate
+- pip install flask flask-cors python-dotenv
+- cd RareImages/rare-ui
+- npm install
+- npm run start
+
+- open another terminal at RareImages/rare-ui
+- npm run start-api
+
+# Mac 
+- cd rare-api
+- python3 install virtualenv
+- python3 -m venv venv
+- source ./venv/bin/activate
+- pip3 install flask flask-cors python-dotenv
+- flask run (has to be run from the terminal running venv, and run from rare-api root)
+
+- open new terminal at rare-ui
+- npm run start
+
 
 # Where I would spend more time
 - I would install SASS and refactor the css files, extract variables to a separate file, and clean up the styles
